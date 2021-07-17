@@ -204,12 +204,20 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
+					<style>
+						#foodForm input,
+						#foodForm select,
+						#foodForm textarea {
+							background-color: red !important;
+						}
+					</style>
 					<div class="modal-body">
 						<form class="needs-validation" id="foodForm">
 							<div class="row">
 								<div class="col-md-6 mb-3">
 									<label for="foodID">Mã Món</label>
 									<input
+										name="maMon"
 										type="text"
 										class="form-control"
 										id="foodID"
@@ -222,6 +230,7 @@
 								<div class="col-md-6 mb-3">
 									<label for="tenMon">Tên Món</label>
 									<input
+										name="tenMon"
 										type="text"
 										class="form-control"
 										id="tenMon"
@@ -236,6 +245,7 @@
 										class="custom-select d-block w-100"
 										id="loai"
 										required
+										name="loaiMon"
 									>
 										<option value="">Chọn loại</option>
 										<option value="loai1">Chay</option>
@@ -247,6 +257,7 @@
 									<label for="giaMon">Giá Món</label>
 									<input
 										type="text"
+										name="giaMon"
 										class="form-control"
 										id="giaMon"
 										placeholder="Nhập giá"
@@ -261,6 +272,7 @@
 										class="custom-select d-block w-100"
 										id="khuyenMai"
 										required
+										name="khuyenMai"
 									>
 										<option value="">Chọn khuyến mãi</option>
 										<option value="10">10</option>
@@ -274,6 +286,7 @@
 										class="custom-select d-block w-100"
 										id="tinhTrang"
 										required
+										name="tinhTrang"
 									>
 										<option value="">Chọn tình trạng</option>
 										<option value="0">Hết</option>
@@ -292,6 +305,7 @@
 										placeholder="Nhập hình ảnh"
 										value=""
 										required
+										name="hinhAnh"
 									/>
 								</div>
 							</div>
